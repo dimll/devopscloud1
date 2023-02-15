@@ -64,14 +64,19 @@ paths:
                 type: string
                 x-content-type: text/plain
         "400":
-          description: Bad Request. student_id must be an integer.
+          description: Bad Request.
           content:
             text/plain:
               schema:
                 type: string
                 x-content-type: text/plain
         "404":
-          description: "Not found, student_id is invalid."
+          description: Not found.
+          content:
+            text/plain:
+              schema:
+                type: string
+                x-content-type: text/plain
       x-openapi-router-controller: swagger_server.controllers.default_controller
   /student:
     post:
