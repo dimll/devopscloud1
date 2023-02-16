@@ -2,8 +2,9 @@ import connexion
 import six
 
 from swagger_server.models.student import Student  # noqa: E501
-from swagger_server.server.student_service import *
+from swagger_server.server.student_service_mongo import *
 from swagger_server import util
+
 
 
 def add_student(body=None):  # noqa: E501
