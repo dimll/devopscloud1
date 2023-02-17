@@ -4,9 +4,12 @@ from functools import reduce
 
 from tinydb import TinyDB, Query
 
+
 db_dir_path = tempfile.gettempdir()
 db_file_path = os.path.join(db_dir_path, "students.json")
 student_db = TinyDB(db_file_path)
+
+# MongoDB setup
 
 
 def add(student=None):
